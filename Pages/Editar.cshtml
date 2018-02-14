@@ -1,0 +1,24 @@
+@page "{id:int}"
+@model razorpages.Pages.EditarModel
+@{
+    ViewData["Title"] = "Editar";
+}
+
+<h2>Editar Cliente - @Model.Cliente.Nome</h2>
+<form method="POST">
+    <div>
+        <input asp-for="Cliente.Id" type="hidden"/>
+    </div>
+    <div>
+        <label asp-for="Cliente.Nome"></label>
+        <input asp-for="Cliente.Nome"/>
+        <span asp-validation-for="Cliente.Nome"></span>
+    </div>
+    <div>
+        <input type="submit" value="Salvar Alterações"/>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

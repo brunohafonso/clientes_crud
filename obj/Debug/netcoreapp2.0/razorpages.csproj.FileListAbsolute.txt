@@ -1,0 +1,10 @@
+C:\Users\bruno\Desktop\razorpages\bin\Debug\netcoreapp2.0\razorpages.deps.json
+C:\Users\bruno\Desktop\razorpages\bin\Debug\netcoreapp2.0\razorpages.runtimeconfig.json
+C:\Users\bruno\Desktop\razorpages\bin\Debug\netcoreapp2.0\razorpages.runtimeconfig.dev.json
+C:\Users\bruno\Desktop\razorpages\bin\Debug\netcoreapp2.0\razorpages.dll
+C:\Users\bruno\Desktop\razorpages\bin\Debug\netcoreapp2.0\razorpages.pdb
+C:\Users\bruno\Desktop\razorpages\obj\Debug\netcoreapp2.0\razorpages.csproj.CoreCompileInputs.cache
+C:\Users\bruno\Desktop\razorpages\obj\Debug\netcoreapp2.0\razorpages.AssemblyInfoInputs.cache
+C:\Users\bruno\Desktop\razorpages\obj\Debug\netcoreapp2.0\razorpages.AssemblyInfo.cs
+C:\Users\bruno\Desktop\razorpages\obj\Debug\netcoreapp2.0\razorpages.dll
+C:\Users\bruno\Desktop\razorpages\obj\Debug\netcoreapp2.0\razorpages.pdb

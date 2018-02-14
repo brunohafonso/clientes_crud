@@ -1,0 +1,24 @@
+@page "{Id:int}"
+@model razorpages.Pages.DetalhesModel
+@{
+    ViewData["title"] = "Detalhes";
+}
+
+<h2>
+    @Model.Cliente.Nome
+</h2>  
+<ul class="list-group">
+    <li class="list-group-item">Id: @Model.Cliente.Id</li>
+    <li class="list-group-item">
+        Nome: @Model.Cliente.Nome
+        <a asp-page="/Editar" asp-route-id="@Model.Cliente.Id" data-original-title="Editar este cliente" data-toggle="tooltip" type="button" class="pull-right btn btn-sm btn-warning">
+            <i class="glyphicon glyphicon-edit"></i>
+        </a>
+    </li>
+</ul>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>

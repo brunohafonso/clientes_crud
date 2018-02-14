@@ -1,0 +1,24 @@
+@page
+@model razorpages.Pages.CreateModel
+@{
+    ViewData["title"] = "Create";
+}
+
+<h2>
+    Create
+</h2>
+
+<p>Entre com o nome do cliente:</p>
+<form method="POST">
+    <div>
+        Nome: <input asp-for="Cliente.Nome"/>
+    </div>
+        <span asp-validation-for="Cliente.Nome"></span>
+    <div>    
+        <input type="submit"/>
+    </div>
+</form>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}

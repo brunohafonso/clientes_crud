@@ -1,0 +1,44 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home";
+}
+
+<form method="POST">
+    <h3>@Model.Mensagem</h3>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Opções</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach(var cliente in Model.Clientes) {
+                <tr>
+                    <td>@cliente.Id</td>
+                    <td>@cliente.Nome</td>
+                    <th>
+                        <a asp-page="/Detalhes" asp-route-id="@cliente.Id" data-original-title="Detalhes deste cliente" data-toggle="tooltip" type="button" class="btn btn-sm btn-info">
+                            <i class="glyphicon glyphicon-user"></i>
+                        </a>
+                        <a asp-page="/Editar" asp-route-id="@cliente.Id" data-original-title="Editar este cliente" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning">
+                            <i class="glyphicon glyphicon-edit"></i>
+                        </a>
+                        <button type="submit" asp-page-handler="delete" asp-route-id="@cliente.Id" data-original-title="Excluir este cliente" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger">
+                            <i class="glyphicon glyphicon-remove"></i>
+                        </button>
+                    </th>
+                </tr>
+            }
+        </tbody>
+    </table>
+</form>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip();
+    });
+</script>
+
