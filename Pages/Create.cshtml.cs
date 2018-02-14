@@ -31,11 +31,6 @@ namespace razorpages.Pages
             Log = log;
         }
 
-        public void OnGet()
-        {
-            
-        }
-
         public async Task<IActionResult> OnPostAsync() 
         {
             if(!ModelState.IsValid) { return Page(); }

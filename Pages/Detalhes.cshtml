@@ -4,18 +4,24 @@
     ViewData["title"] = "Detalhes";
 }
 
-<h2>
-    @Model.Cliente.Nome
-</h2>  
-<ul class="list-group">
-    <li class="list-group-item">Id: @Model.Cliente.Id</li>
-    <li class="list-group-item">
-        Nome: @Model.Cliente.Nome
+<form method="POST">
+    <h2>
+        @Model.Cliente.Nome
         <a asp-page="/Editar" asp-route-id="@Model.Cliente.Id" data-original-title="Editar este cliente" data-toggle="tooltip" type="button" class="pull-right btn btn-sm btn-warning">
             <i class="glyphicon glyphicon-edit"></i>
         </a>
-    </li>
-</ul>
+        <button type="submit" asp-page-handler="delete" asp-route-id="@Model.Cliente.Id" data-original-title="Excluir este cliente" data-toggle="tooltip" class="pull-right btn btn-sm btn-danger">
+            <i class="glyphicon glyphicon-remove"></i>
+        </button>
+    </h2>  
+    <ul class="list-group">
+        <li class="list-group-item">Id: @Model.Cliente.Id</li>
+        <li class="list-group-item">
+            Nome: @Model.Cliente.Nome
+            
+        </li>
+    </ul>
+</form>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
     $(document).ready(function() {

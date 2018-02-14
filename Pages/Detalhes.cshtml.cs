@@ -34,5 +34,18 @@ namespace razorpages.Pages
 
             return Page();
         }
+
+        public async Task<IActionResult> OnPostDeleteAsync(int Id) 
+        {
+            var cliente = await _context.Clientes.FindAsync(Id);
+
+            if(cliente != null) 
+            {
+                _context.Clientes.Remove(cliente);
+                await _context.SaveChangesAsync();
+            }
+
+            return RedirectToPage();
+        }
     }
 }
