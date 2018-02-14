@@ -12535,25 +12535,25 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\bruno\\.nuget\\packages\\": {},
+    "C:\\Users\\44063076806\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\bruno\\Desktop\\razorpages\\razorpages.csproj",
+      "projectUniqueName": "C:\\Users\\44063076806\\desktop\\projetos\\clientes_crud\\razorpages.csproj",
       "projectName": "razorpages",
-      "projectPath": "C:\\Users\\bruno\\Desktop\\razorpages\\razorpages.csproj",
-      "packagesPath": "C:\\Users\\bruno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\bruno\\Desktop\\razorpages\\obj\\",
+      "projectPath": "C:\\Users\\44063076806\\desktop\\projetos\\clientes_crud\\razorpages.csproj",
+      "packagesPath": "C:\\Users\\44063076806\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\44063076806\\desktop\\projetos\\clientes_crud\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackagesFallback\\",
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\bruno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\44063076806\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.Fallback.config"
       ],
